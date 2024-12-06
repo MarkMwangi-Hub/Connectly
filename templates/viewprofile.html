@@ -1,0 +1,42 @@
+{% extends 'startpage.html' %}
+{% load static %}
+
+{% block content %}
+
+<body class="bg-light">
+
+    <div class="container my-5">
+        <div class="card shadow-sm">
+            <div class="card-header bg-primary text-white">
+                <h2 class="card-title"><i class="bi bi-person-circle"></i> Profile Details</h2>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        {% if profile.profile_picture %}
+                            <div class="text-center">
+                                <img src="{{ profile.profile_picture.url }}" alt="Profile Picture" class="img-fluid rounded-circle" style="width: 250px; height: 250px;">
+                            </div>
+                        {% else %}
+                            <div class="text-center">
+                                <i class="bi bi-person-circle" style="font-size: 100px; color: #ccc;"></i>
+                            </div>
+                        {% endif %}
+                    </div>
+                    <div class="col-md-8">
+                        <p><strong>Name:</strong> {{ profile.name }}</p>
+                        <p><strong>Contact:</strong> {{ profile.contact }}</p>
+                        <p><strong>Date of Birth:</strong> {{ profile.dateofbirth }}</p>
+                        <p><strong>Course:</strong> {{ profile.course }}</p>
+                        <p><strong>Location:</strong> {{ profile.location }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer text-center">
+                <a href="{% url 'edit_profile' %}" class="btn btn-primary"><i class="bi bi-pencil-square"></i> Edit Profile</a>
+            </div>
+        </div>
+    </div>
+
+
+ {% endblock %}

@@ -1,0 +1,128 @@
+{% extends 'startpage.html' %}
+{% load static %}
+
+{% block content %}
+
+<body>
+<br>
+<div class="col-lg-6">
+    <form method="POST">
+        {% csrf_token %}
+        <div class="row gy-4">
+
+            <div class="col-md-6">
+                <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="4" placeholder="Message" required=""></textarea>
+                </div>
+
+                  <button type="submit" class="btn btn-success">Send Message</button>
+                </div>
+
+            </form>
+</div>
+
+<!-- Blog Comments Section -->
+<section id="blog-comments" class="blog-comments section">
+
+  <div class="container">
+
+    <h4 class="comments-count">5 Comments</h4>
+
+    <!-- Comment #1 -->
+    <div id="comment-1" class="comment text-dark">
+      <div class="d-flex">
+        <div class="comment-img"><img src="assets/img/blog/comments-1.jpg" alt="User 1"></div>
+        <div>
+          <h5><a href="#">John Doe</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
+          <time datetime="2023-11-01">01 Nov, 2023</time>
+          <p>
+            I recently started learning about Artificial Intelligence and its applications in everyday life. AI-powered apps are revolutionizing industries like healthcare, finance, and even transportation. I'm excited to see how this technology will evolve in the coming years!
+          </p>
+        </div>
+      </div>
+    </div><!-- End comment #1 -->
+
+    <!-- Comment #2 -->
+    <div id="comment-2" class="comment text-dark">
+      <div class="d-flex">
+        <div class="comment-img"><img src="assets/img/blog/comments-2.jpg" alt="User 2"></div>
+        <div>
+          <h5><a href="#">Jane Smith</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
+          <time datetime="2023-11-05">05 Nov, 2023</time>
+          <p>
+            Blockchain technology is another fascinating area. Beyond cryptocurrencies, its potential to streamline supply chains and improve security in sectors like banking is mind-blowing. We may see even more industries adopting decentralized systems in the future.
+          </p>
+        </div>
+      </div>
+
+      <div id="comment-reply-1" class="comment comment-reply text-dark">
+        <div class="d-flex">
+          <div class="comment-img"><img src="assets/img/blog/comments-3.jpg" alt="User 3"></div>
+          <div>
+            <h5><a href="#">Michael Turner</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
+            <time datetime="2023-11-06">06 Nov, 2023</time>
+            <p>
+              I agree with you, Jane. Blockchain's potential to transform industries is massive. In fact, many experts believe it will be the next big technology after the internet. Imagine how it could improve transparency and trust in sectors like voting systems and healthcare records!
+            </p>
+          </div>
+        </div>
+      </div><!-- End comment reply #1-->
+
+    </div><!-- End comment #2 -->
+
+    <!-- Comment #3 -->
+    <div id="comment-3" class="comment text-dark">
+      <div class="d-flex">
+        <div class="comment-img"><img src="assets/img/blog/comments-4.jpg" alt="User 4"></div>
+        <div>
+          <h5><a href="#">Sarah Lee</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
+          <time datetime="2023-11-08">08 Nov, 2023</time>
+          <p>
+            Cloud computing is another game-changer. With platforms like AWS, Azure, and Google Cloud, businesses no longer need to manage their own servers. The scalability and flexibility offered by cloud solutions are second to none, making it easier for companies to innovate and reduce overhead costs.
+          </p>
+        </div>
+      </div>
+    </div><!-- End comment #3 -->
+
+    <!-- Comment #4 -->
+    <div id="comment-4" class="comment text-dark">
+      <div class="d-flex">
+        <div class="comment-img"><img src="assets/img/blog/comments-5.jpg" alt="User 5"></div>
+        <div>
+          <h5><a href="#">Tom Harris</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
+          <time datetime="2023-11-10">10 Nov, 2023</time>
+          <p>
+            Augmented Reality (AR) has come a long way in recent years. I'm particularly excited to see how AR is being integrated into education. Imagine being able to experience history or biology lessons in 3D! This could completely change the way students interact with the material.
+          </p>
+        </div>
+      </div>
+    </div><!-- End comment #4 -->
+
+    <!-- Comment #5 -->
+    <div id="comment-5" class="comment text-dark">
+      <div class="d-flex">
+        <div class="comment-img"><img src="assets/img/blog/comments-6.jpg" alt="User 6"></div>
+        <div>
+          <h5><a href="#">Emily Johnson</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
+          <time datetime="2023-11-12">12 Nov, 2023</time>
+          <p>
+            The future of 5G is incredibly promising. With its high-speed capabilities, we will see advancements in IoT, autonomous vehicles, and even real-time remote surgeries. It's amazing to think about the possibilities of faster, more reliable internet connections in everyday life.
+          </p>
+        </div>
+      </div>
+    </div><!-- End comment #5 -->
+
+  </div>
+
+</section><!-- /Blog Comments Section -->
+
+         </body>
+
+    {% endblock %}

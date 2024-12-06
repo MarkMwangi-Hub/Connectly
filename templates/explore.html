@@ -1,0 +1,214 @@
+{% extends 'startpage.html' %}
+{% load static %}
+
+{% block content %}
+<main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container position-relative">
+        <h1>Explore</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li class="current">Explore</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Blog Posts Section -->
+    <section id="blog-posts" class="blog-posts section">
+
+      <div class="container">
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <article class="text-dark">
+
+              <div class="post-img">
+                <img src="{% static 'assets/Capture1.JPG'%}" alt="" class="img-fluid">
+              </div>
+
+              <p class="post-category">Internet of Things (IoT)</p>
+
+              <h2 class="title">
+                <a href="{% url 'details' %}#IoT" style="font-size: 20px">Connecting the Future: How IoT is Shaping Smart Cities and Homes</a>
+              </h2>
+
+              <div class="d-flex align-items-center">
+                <img src="" alt="" class="img-fluid post-author-img flex-shrink-0">
+                <div class="post-meta">
+                  <p class="post-author">Maria Wekesa</p>
+                  <p class="post-date">
+                    <time datetime="">December 1, 2024</time>
+                  </p>
+                </div>
+              </div>
+
+            </article>
+          </div><!-- End post list item -->
+
+          <div class="col-lg-4">
+            <article class="text-dark">
+
+              <div class="post-img">
+                <img src="{% static 'assets/Capture 2.jpg'%}" alt="" class="img-fluid">
+              </div>
+
+              <p class="post-category">Cloud Computing</p>
+
+              <h2 class="title">
+                <a href="{% url 'details' %}#CloudComputing" style="font-size: 20px">The Shift to Cloud: How Businesses are Adapting to the Digital Transformation</a>
+              </h2>
+
+              <div class="d-flex align-items-center">
+                <img src="" alt="" class="img-fluid post-author-img flex-shrink-0">
+                <div class="post-meta">
+                  <p class="post-author">Tracy Chebet</p>
+                  <p class="post-date">
+                    <time datetime="2022-01-01">Dec 1, 2024</time>
+                  </p>
+                </div>
+              </div>
+
+            </article>
+          </div><!-- End post list item -->
+
+          <div class="col-lg-4">
+            <article class="text-dark">
+
+              <div class="post-img">
+                <img src="{% static 'assets/Capture3.jpg'%}" alt="" class="img-fluid">
+              </div>
+
+              <p class="post-category">Blockchain Technology</p>
+
+              <h2 class="title">
+                <a href="{% url 'details' %}#Blockchain" style="font-size: 20px">Blockchain Beyond Cryptocurrency: The Revolution of Decentralized Systems</a>
+              </h2>
+
+              <div class="d-flex align-items-center">
+                <img src="" alt="" class="img-fluid post-author-img flex-shrink-0">
+                <div class="post-meta">
+                  <p class="post-author">Mark Mwangi</p>
+                  <p class="post-date">
+                    <time datetime="2022-01-01">Dec 2, 2024</time>
+                  </p>
+                </div>
+              </div>
+
+            </article>
+          </div><!-- End post list item -->
+
+          <div class="col-lg-4">
+            <article class="text-dark">
+
+              <div class="post-img">
+                <img src="{% static 'assets/Capture6.JPG'%}"alt="" class="img-fluid">
+              </div>
+
+              <p class="post-category">Cybersecurity</p>
+
+              <h2 class="title">
+                <a href="{% url 'details' %}#cybersecurity" style="font-size: 20px">Securing the Digital World: Emerging Threats and Solutions in Cybersecurity</a>
+              </h2>
+
+              <div class="d-flex align-items-center">
+                <img src="" alt="" class="img-fluid post-author-img flex-shrink-0">
+                <div class="post-meta">
+                  <p class="post-author">Lisa Atieno</p>
+                  <p class="post-date">
+                    <time datetime="2022-01-01">Dec 3, 2024</time>
+                  </p>
+                </div>
+              </div>
+
+            </article>
+          </div><!-- End post list item -->
+
+          <div class="col-lg-4">
+            <article class="text-dark">
+
+              <div class="post-img">
+                <img src="{% static 'assets/Capture4.JPG'%}" alt="" class="img-fluid">
+              </div>
+
+              <p class="post-category text-dark">5G Technology</p>
+
+              <h2 class="title">
+                <a href="{% url 'details' %}#5G" style="font-size: 20px">The 5G Revolution: What It Means for Mobile Networks and Global Connectivity</a>
+              </h2>
+
+              <div class="d-flex align-items-center">
+                <img src="" alt="" class="img-fluid post-author-img flex-shrink-0">
+                <div class="post-meta">
+                  <p class="post-author">Denis Peterson</p>
+                  <p class="post-date">
+                    <time datetime="2022-01-01">Dec 4, 2024</time>
+                  </p>
+                </div>
+              </div>
+
+            </article>
+          </div><!-- End post list item -->
+
+          <div class="col-lg-4">
+            <article class="text-dark">
+
+              <div class="post-img">
+                <img src="{% static 'assets/Capture5.JPG'%}" alt="" class="img-fluid">
+              </div>
+
+              <p class="post-category text-dark">Artificial Intelligence (AI)</p>
+
+              <h2 class="title">
+                <a href="{% url 'details' %}#ai" style="font-size: 20px">The Future of AI: How Machine Learning is Transforming Industries</a>
+              </h2>
+
+              <div class="d-flex align-items-center">
+                <img src="" alt="" class="img-fluid post-author-img flex-shrink-0">
+                <div class="post-meta">
+                  <p class="post-author">Mika Lendon</p>
+                  <p class="post-date">
+                    <time datetime="2022-01-01">Dec 4, 2024</time>
+                  </p>
+                </div>
+              </div>
+
+            </article>
+          </div><!-- End post list item -->
+            <div class="col-lg-4">
+            <article class="text-dark">
+
+              <div class="post-img">
+                <img src="{% static 'assets/Capture7.JPG'%}" alt="" class="img-fluid">
+              </div>
+
+              <p class="post-category text-dark">Augmented Reality (AR) & Virtual Reality (VR)</p>
+
+              <h2 class="title">
+                <a href="{% url 'details' %}#AR" style="font-size: 20px">AR and VR: Bridging the Gap Between Reality and Imagination in Gaming and Education</a>
+              </h2>
+
+              <div class="d-flex align-items-center">
+                <img src="" alt="" class="img-fluid post-author-img flex-shrink-0">
+                <div class="post-meta">
+                  <p class="post-author">Mika Lendon</p>
+                  <p class="post-date">
+                    <time datetime="2022-01-01">Dec 5, 2024</time>
+                  </p>
+                </div>
+              </div>
+
+            </article>
+          </div><!-- End post list item -->
+
+
+        </div>
+      </div>
+
+    </section><!-- /Blog Posts Section -->
+</main>
+
+{% endblock %}
